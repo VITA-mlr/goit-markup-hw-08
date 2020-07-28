@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+
+  background: var(--hero-button-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--header-menu-color);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+figure,
+p {
+  margin: 0;
+}
+
+.imgblock {
+  display: block;
+}
