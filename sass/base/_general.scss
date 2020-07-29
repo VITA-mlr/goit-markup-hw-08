@@ -12,12 +12,12 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
 
-  background: var(--hero-button-color);
+  background: $hero-button-color;
 }
 
 a {
   text-decoration: none;
-  color: var(--header-menu-color);
+  color: $header-menu-color;
 }
 
 ul {
@@ -41,4 +41,24 @@ p {
 
 .imgblock {
   display: block;
+}
+
+// Sections
+.sectoin-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: $header-menu-color;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  border: 0;
+  padding: 0;
+  height: 1px;
+  width: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

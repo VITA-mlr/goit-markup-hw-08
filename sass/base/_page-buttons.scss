@@ -3,10 +3,21 @@
   margin: 0;
   border: none;
   outline: none;
+  background-color: $active-color;
+  color: $hero-button-color;
 
   .header-section & {
     width: 40px;
     height: 40px;
     background-color: $hero-button-color;
+  }
+
+  .hero &,
+  .modal & {
+    justify-content: center;
+    // border: none;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
