@@ -1,0 +1,40 @@
+// messengers in team-section and footer
+
+.messengers-flex {
+  display: flex;
+  width: 206px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 24px;
+}
+
+.messenger-item {
+  .icon {
+    margin-right: 0;
+    width: 20px;
+    height: 20px;
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  .footer & > a {
+    fill: $hero-button-color;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+  }
+}
+
+.messenger-item a {
+  display: block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+
+  &:hover,
+  &:focus {
+    background-color: $active-color;
+    border-radius: 50%;
+    fill: $hero-button-color;
+  }
+}

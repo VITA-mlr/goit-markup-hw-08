@@ -1,0 +1,39 @@
+// Section - reguler customers
+
+.customers.container {
+  padding-bottom: 60px;
+}
+
+.customers-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+
+  li:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
+.customers-block {
+  width: 170px;
+  height: 90px;
+  border: 1px solid $customers-color;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: $customers-color;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: fill, border-color;
+
+  &:hover,
+  &:focus {
+    fill: $active-color;
+    border-color: $active-color;
+  }
+}

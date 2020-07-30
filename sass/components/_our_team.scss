@@ -1,0 +1,56 @@
+// Section - our team
+
+.team {
+  background-color: $team-color;
+  margin-top: 60px;
+
+  .container {
+    padding-bottom: 60px;
+  }
+}
+
+.team-item {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.team .imgblock {
+  @media (max-width: 479px) {
+    width: 100%;
+  }
+  @media (min-width: 480px) {
+    width: 450px;
+  }
+}
+
+.team-header {
+  padding-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  text-align: center;
+  color: $header-menu-color;
+}
+
+.team-profetion {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $text-color;
+}
+
+.card-shadow {
+  background: $hero-button-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}

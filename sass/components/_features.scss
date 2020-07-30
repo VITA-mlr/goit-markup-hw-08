@@ -3,6 +3,10 @@
   margin-bottom: 30px;
 }
 
+.feature-flex li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .icon-features {
   content: "";
   display: block;
@@ -19,4 +23,38 @@
 .icon-position {
   width: 70px;
   height: 70px;
+}
+
+.features-item-header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $header-menu-color;
+  margin-bottom: 10px;
+}
+
+.features-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $text-color;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    li .icon-features {
+      width: calc(100% / 2);
+    }
+
+    li:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
 }
