@@ -17,19 +17,16 @@
   }
 
   .hero & {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    // padding-bottom: 200px;
   }
 
   h2 {
     margin-bottom: 30px;
   }
 
-  @media screen and (max-width: 479px) {
-    max-width: 479px;
-  }
-  @media screen and (max-width: 767px) {
-    width: 100%;
+  @media screen and (min-width: 478px) {
+    width: 478;
   }
 }
 

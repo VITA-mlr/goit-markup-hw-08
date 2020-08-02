@@ -40,15 +40,7 @@
   // outline: 2px solid blue;
   opacity: 0;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color fill;
-
-  li:hover {
-    color: $active-color;
-
-    .icon {
-      fill: $active-color;
-    }
-  }
+  transition-property: color, fill;
 }
 
 .nav-list-site {
@@ -57,11 +49,19 @@
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.02em;
-  color: $header-menu-color;
+  // color: $header-menu-color;
 
   li:not(:last-child) {
     margin-bottom: 40px;
   }
+
+  li:hover {
+    color: $active-color;
+  }
+}
+
+.nav-link.current {
+  color: $active-color;
 }
 
 .line {
@@ -84,10 +84,6 @@
     width: 99px;
   }
 }
-// .line-link-2{
-//   @extend %line-link;
-//   width: 99px;
-// }
 
 .nav-list-contacts {
   font-weight: 500;
@@ -103,5 +99,13 @@
   .icon {
     margin-right: 10px;
     fill: $text-color;
+  }
+
+  li:hover {
+    color: $active-color;
+
+    .icon {
+      fill: $active-color;
+    }
   }
 }
