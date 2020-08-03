@@ -8,7 +8,7 @@
 
 .card-link {
   display: inline-block;
-  width: 100%;
+  // width: 100%;
   content: "";
   overflow: hidden;
 
@@ -56,10 +56,10 @@
 .text {
   position: absolute;
   top: 0;
-  padding-top: 63px;
+  padding-top: 77px;
   padding-left: 24px;
   padding-right: 24px;
-  padding-bottom: 63px;
+  padding-bottom: 77px;
   height: 100%;
   max-width: 480px;
   font-size: 18px;
@@ -81,5 +81,10 @@
 
   @media screen and (min-width: 480px) {
     width: 480px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 63px;
+    padding-bottom: 63px;
   }
 }

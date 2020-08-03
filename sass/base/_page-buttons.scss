@@ -6,12 +6,6 @@
   background-color: $active-color;
   color: $hero-button-color;
 
-  .header-section & {
-    width: 40px;
-    height: 40px;
-    background-color: $hero-button-color;
-  }
-
   .hero &,
   .modal & {
     justify-content: center;
@@ -31,6 +25,27 @@
     padding-left: 27px;
     padding-right: 27px;
     border: none;
+  }
+}
+
+.button-menu {
+  @extend .button;
+  width: 40px;
+  height: 40px;
+  background-color: $hero-button-color;
+
+  & .icon-cross {
+    display: none;
+  }
+}
+
+.button-menu.is-open {
+  & .icon-cross {
+    display: block;
+  }
+
+  & .icon-menu {
+    display: none;
   }
 }
 

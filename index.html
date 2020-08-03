@@ -21,14 +21,28 @@
           <a href="./index.html"><span class="logo-blue">Web</span> Studio</a>
         </div>
 
-        <button class="button">
-          <svg class="icon-menu" width="40" height="40">
-            <use href="./images/sprite.svg#icon-menu"></use>
+        <button
+          class="button-menu is-open"
+          type="button"
+          aria-controls="nav-flex"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключаткль мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./images/sprite.svg#icon-close-black"
+            ></use>
+            <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
           </svg>
         </button>
 
         <!-- Navigation by site -->
-        <div class="nav-flex nav-for-480">
+        <div class="nav-flex is-open" id="nav-flex" data-menu>
           <ul class="nav-list-site">
             <li class="line">
               <a class="nav-link current" href="">Студия</a>
@@ -270,7 +284,11 @@
             <li class="team-item">
               <img
                 class="imgblock"
-                src="images/photo_smith.jpg"
+                srcset="
+                  ./images/team1/mobile1team.jpg    1x,
+                  ./images/team1/mobile1team@2x.jpg 2x
+                "
+                src="./images/team1/mobile1team.jpg"
                 alt="Фото сотрудника"
                 width="270"
               />
@@ -313,7 +331,11 @@
             <li class="team-item">
               <img
                 class="imgblock"
-                src="images/photo_stewart.jpg"
+                srcset="
+                  ./images/team2/mobile2team.jpg    1x,
+                  ./images/team2/mobile2team@2x.jpg 2x
+                "
+                src="./images/team2/mobile2team.jpg"
                 alt="Фото сотрудника"
                 width="270"
               />
@@ -357,7 +379,11 @@
               <div>
                 <img
                   class="imgblock"
-                  src="images/photo_jakis.jpg"
+                  srcset="
+                    ./images/team3/mobile3team.jpg    1x,
+                    ./images/team3/mobile3team@2x.jpg 2x
+                  "
+                  src="./images/team3/mobile3team.jpg"
                   alt="Фото сотрудника"
                   width="270"
                 />
@@ -404,7 +430,11 @@
               <div>
                 <img
                   class="imgblock"
-                  src="images/photo_doe.jpg"
+                  srcset="
+                    ./images/team2/mobile2team.jpg    1x,
+                    ./images/team2/mobile2team@2x.jpg 2x
+                  "
+                  src="./images/team4/mobile4team.jpg"
                   alt="Фото сотрудника"
                   width="270"
                 />
@@ -624,6 +654,8 @@
         </p>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

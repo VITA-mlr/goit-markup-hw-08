@@ -20,14 +20,28 @@
           <a href="./index.html"><span class="logo-blue">Web</span> Studio</a>
         </div>
 
-        <button class="button">
-          <svg class="icon-menu" width="40" height="40">
-            <use href="./images/sprite.svg#icon-menu"></use>
+        <button
+          class="button-menu is-open"
+          type="button"
+          aria-controls="nav-flex"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключаткль мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./images/sprite.svg#icon-close-black"
+            ></use>
+            <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
           </svg>
         </button>
 
         <!-- Navigation by site -->
-        <div class="nav-flex nav-for-480">
+        <div class="nav-flex is-open" id="nav-flex" data-menu>
           <ul class="nav-list-site">
             <li><a class="nav-link" href="./index.html">Студия</a></li>
             <li class="line">
@@ -86,7 +100,11 @@
               <div class="position-text">
                 <img
                   class="imgblock"
-                  src="./images/project-1.jpg"
+                  srcset="
+                    <!-- ./images/project1/mobilePrj1.jpg    1x, -->
+                    ./images/project1/mobilePrj1@2x.jpg 2x
+                  "
+                  src="./images/project1/mobilePrj1.jpg"
                   alt="Изображение веб-сайта на ноутбуке"
                 />
 
@@ -107,7 +125,11 @@
               <div class="position-text">
                 <img
                   class="imgblock"
-                  src="./images/project-2.jpg"
+                  srcset="
+                    ./images/project2/mobilePrj2.jpg    1x,
+                    ./images/project2/mobilePrj2@2x.jpg 2x
+                  "
+                  src="./images/project2/mobilePrj2.jpg"
                   alt="Изображение спортсменов играющих в баскетбол"
                 />
                 <p class="text">
@@ -129,7 +151,11 @@
               <div class="position-text">
                 <img
                   class="imgblock"
-                  src="./images/project-3.jpg"
+                  srcset="
+                    ./images/project3/mobilePrj3.jpg    1x,
+                    ./images/project3/mobilePrj3@2x.jpg 2x
+                  "
+                  src="./images/project3/mobilePrj3.jpg"
                   alt="Изображение логотипа"
                 />
                 <p class="text">
@@ -149,7 +175,11 @@
               <div class="position-text">
                 <img
                   class="imgblock"
-                  src="./images/project-4.jpg"
+                  srcset="
+                    ./images/project4/mobilePrj4.jpg    1x,
+                    ./images/project4/mobilePrj4@2x.jpg 2x
+                  "
+                  src="./images/project4/mobilePrj4.jpg"
                   alt="Изображение наушников"
                 />
                 <p class="text">
@@ -169,7 +199,11 @@
               <div class="position-text">
                 <img
                   class="imgblock"
-                  src="./images/project-5.jpg"
+                  srcset="
+                    ./images/project5/mobilePrj5.jpg    1x,
+                    ./images/project5/mobilePrj5@2x.jpg 2x
+                  "
+                  src="./images/project5/mobilePrj5.jpg"
                   alt="Изображение двух коробок"
                 />
                 <p class="text">
@@ -189,7 +223,11 @@
               <div class="position-text">
                 <img
                   class="imgblock"
-                  src="./images/design_decisions.jpg"
+                  srcset="
+                    ./images/project6/mobilePrj6.jpg    1x,
+                    ./images/project6/mobilePrj6@2x.jpg 2x
+                  "
+                  src="./images/project6/mobilePrj6.jpg"
                   alt="Изображение монитора"
                 />
                 <p class="text">
@@ -209,7 +247,11 @@
               <div class="position-text">
                 <img
                   class="imgblock"
-                  src="./images/project-7.jpg"
+                  srcset="
+                    ./images/project7/mobilePrj7.jpg    1x,
+                    ./images/project7/mobilePrj7@2x.jpg 2x
+                  "
+                  src="./images/project7/mobilePrj7.jpg"
                   alt="Изображение розвернутого журнала"
                 />
                 <p class="text">
@@ -229,7 +271,11 @@
               <div class="position-text">
                 <img
                   class="imgblock"
-                  src="./images/project-8.jpg"
+                  srcset="
+                    ./images/project8/mobilePrj8.jpg    1x,
+                    ./images/project8/mobilePrj8@2x.jpg 2x
+                  "
+                  src="./images/project8/mobilePrj8.jpg"
                   alt="Изображение логотипа на этекетке"
                 />
                 <p class="text">
@@ -249,7 +295,11 @@
               <div class="position-text">
                 <img
                   class="imgblock"
-                  src="./images/desktop_applications.jpg"
+                  srcset="
+                    ./images/project9/mobilePrj9.jpg    1x,
+                    ./images/project9/mobilePrj9@2x.jpg 2x
+                  "
+                  src="./images/project9/mobilePrj9.jpg"
                   alt="Изображение ноутбука с печатающими руками"
                 />
                 <p class="text">
@@ -358,5 +408,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
