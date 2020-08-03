@@ -1,7 +1,7 @@
 .header-section {
   margin: 0;
   padding: 0;
-  // position: relative;
+  position: relative;
   color: $logo-color;
   border-bottom: 1px solid $line-color;
 }
@@ -30,16 +30,17 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: translateY(101%);
+  transform: translateY(100%);
   z-index: 10;
   width: 100%;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $hero-button-color;
+  border-top: 1px solid $line-color;
   // outline: 2px solid blue;
   opacity: 0;
-  pointer-events: none;
+  // pointer-events: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, fill;
 }

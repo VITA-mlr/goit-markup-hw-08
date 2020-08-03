@@ -34,11 +34,11 @@
     }
   }
 
-  @media screen and (min-width: 480px) {
-    li:not(:nth-child(3n + 3)) {
-      margin-right: 30px;
-    }
-  }
+  // @media screen and (min-width: 480px) {
+  //   li:not(:nth-child(3n + 3)) {
+  //     // margin-right: 30px;
+  //   }
+  // }
 }
 
 .customers-block {
