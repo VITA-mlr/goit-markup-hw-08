@@ -2,29 +2,20 @@
 
 .team {
   background-color: $team-color;
-  margin-top: 60px;
-
-  .container {
-    padding-bottom: 60px;
-  }
+  // .container {
+  //   padding-bottom: 60px;
+  // }
 }
 
 .team-item {
-  width: 100%;
-
   &:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-.team .imgblock {
-  @media (max-width: 479px) {
-    width: 100%;
-  }
-  @media (min-width: 480px) {
-    width: 450px;
-  }
-}
+// @media (max-width: 479px) {
+//   width: 100%;
+// }
 
 .team-header {
   padding-top: 30px;
@@ -53,4 +44,52 @@
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media (min-width: 480px) {
+  .team-item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team-item {
+    width: 354px;
+    outline: 1px solid tomato;
+
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-flex {
+    flex-wrap: nowrap;
+  }
+
+  .team-item {
+    width: 270px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 0px;
+    }
+    &:nth-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }

@@ -382,7 +382,7 @@ p {
   margin: 0;
 }
 
-.imgblock {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -498,30 +498,54 @@ p {
   padding-top: 118px;
 }
 
-.container h2 {
-  margin-bottom: 30px;
+.features .container {
+  padding-bottom: 60px;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
+.team .container {
+  padding-bottom: 60px;
+}
+
+.container h2 {
+  margin-bottom: 30px;
 }
 
 .portfolio.container {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .container {
-    max-width: 768px;
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+    outline: 1px solid tomato;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
     padding-top: 94px;
+  }
+  .hero .container {
+    padding-top: 200px;
+  }
+  .team .container {
+    padding-bottom: 94px;
+  }
+  .features .container {
+    padding-bottom: 0;
+  }
+  .container h2 {
+    margin-top: 94px;
+  }
+  .portfolio.container {
+    margin-top: 93px;
   }
 }
 
@@ -885,7 +909,7 @@ p {
   padding-right: 24px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 481px) {
   .card-description {
     width: 480px;
   }

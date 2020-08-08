@@ -8,7 +8,6 @@
 
 .card-link {
   display: inline-block;
-  // width: 100%;
   content: "";
   overflow: hidden;
 
@@ -35,7 +34,7 @@
   //     0px 1px 1px rgba(0, 0, 0, 0.12);
   // }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 481px) {
     width: 480px;
   }
 }

@@ -167,12 +167,12 @@
       </section>
 
       <!--Section - features -->
-      <section>
+      <section class="features">
         <div class="container">
           <h2 class="sectoin-title visually-hidden">Особенности</h2>
 
           <ul class="feature-flex">
-            <li>
+            <li class="feature-flex-item">
               <div class="icon-features" aria-label="Картинка антена">
                 <svg class="icon-position">
                   <use href="./images/sprite.svg#icon-antenna-1"></use>
@@ -185,7 +185,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="feature-flex-item">
               <div class="icon-features" aria-label="Картинка">
                 <svg class="icon-position">
                   <use href="./images/sprite.svg#icon-clock-1"></use>
@@ -198,7 +198,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="feature-flex-item">
               <div class="icon-features" aria-label="Картинка">
                 <svg class="icon-position">
                   <use href="./images/sprite.svg#icon-diagram-1"></use>
@@ -211,7 +211,7 @@
               </p>
             </li>
 
-            <li>
+            <li class="feature-flex-item">
               <div class="icon-features" aria-label="Картинка">
                 <svg class="icon-position">
                   <use href="./images/sprite.svg#icon-astronaut-1"></use>
@@ -282,16 +282,61 @@
 
           <ul class="team-flex">
             <li class="team-item">
-              <img
-                class="imgblock"
-                srcset="
-                  ./images/team1/mobile1team.jpg    1x,
-                  ./images/team1/mobile1team@2x.jpg 2x
-                "
-                src="./images/team1/mobile1team.jpg"
-                alt="Фото сотрудника"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team1/desktop1team.webp    270w,
+                    ./images/team1/desktop1team@2x.webp 540w
+                  "
+                  type="image/webp"
+                  sizes="270px"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team1/desktop1team.jpg    270w,
+                    ./images/team1/desktop1team@2x.jpg 540w
+                  "
+                  sizes="270px"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team1/tablet1team.webp    354w,
+                    ./images/team1/tablet1team@2x.webp 708w
+                  "
+                  type="image/webp"
+                  sizes="354px"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team1/tablet1team.jpg    354w,
+                    ./images/team1/tablet1team@2x.jpg 708w
+                  "
+                  sizes="354px"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team1/mobile1team.webp    450w,
+                    ./images/team1/mobile1team@2x.webp 900w
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team1/mobile1team.jpg    450w,
+                    ./images/team1/mobile1team@2x.jpg 900w
+                  "
+                />
+                <img
+                  src="./images/team1/mobile1team.jpg"
+                  alt="Фото сотрудника"
+                />
+              </picture>
               <div class="card-shadow">
                 <h3 class="team-header">Николай Кучеренко</h3>
                 <p class="team-profetion">Product Designer</p>
@@ -329,16 +374,61 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="imgblock"
-                srcset="
-                  ./images/team2/mobile2team.jpg    1x,
-                  ./images/team2/mobile2team@2x.jpg 2x
-                "
-                src="./images/team2/mobile2team.jpg"
-                alt="Фото сотрудника"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team2/desktop2team.webp    270w,
+                    ./images/team2/desktop2team@2x.webp 540w
+                  "
+                  type="image/webp"
+                  sizes="270px"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team2/desktop2team.jpg    270w,
+                    ./images/team2/desktop2team@2x.jpg 540w
+                  "
+                  sizes="270px"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team2/tablet2team.webp    354w,
+                    ./images/team2/tablet2team@2x.webp 708w
+                  "
+                  type="image/webp"
+                  sizes="354px"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team2/tablet2team.jpg    354w,
+                    ./images/team2/tablet2team@2x.jpg 708w
+                  "
+                  sizes="354px"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team2/mobile2team.webp    450w,
+                    ./images/team2/mobile2team@2x.webp 900w
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 480px)"
+                  srcset="
+                    ./images/team2/mobile2team.jpg    450w,
+                    ./images/team2/mobile2team@2x.jpg 900w
+                  "
+                />
+                <img
+                  src="./images/team2/mobile2team.jpg"
+                  alt="Фото сотрудника"
+                />
+              </picture>
               <div class="card-shadow">
                 <h3 class="team-header">Ольга Иванова</h3>
                 <p class="team-profetion">Frontend Developer</p>
@@ -377,16 +467,61 @@
             </li>
             <li class="team-item">
               <div>
-                <img
-                  class="imgblock"
-                  srcset="
-                    ./images/team3/mobile3team.jpg    1x,
-                    ./images/team3/mobile3team@2x.jpg 2x
-                  "
-                  src="./images/team3/mobile3team.jpg"
-                  alt="Фото сотрудника"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/team3/desktop3team.webp    270w,
+                      ./images/team3/desktop3team@2x.webp 540w
+                    "
+                    type="image/webp"
+                    sizes="270px"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/team3/desktop3team.jpg    270w,
+                      ./images/team3/desktop3team@2x.jpg 540w
+                    "
+                    sizes="270px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/team3/tablet3team.webp    354w,
+                      ./images/team3/tablet3team@2x.webp 708w
+                    "
+                    type="image/webp"
+                    sizes="354px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/team3/tablet3team.jpg    354w,
+                      ./images/team3/tablet3team@2x.jpg 708w
+                    "
+                    sizes="354px"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/team3/mobile3team.webp    450w,
+                      ./images/team3/mobile3team@2x.webp 900w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/team3/mobile3team.jpg    450w,
+                      ./images/team3/mobile3team@2x.jpg 900w
+                    "
+                  />
+                  <img
+                    src="./images/team3/mobile3team.jpg"
+                    alt="Фото сотрудника"
+                  />
+                </picture>
                 <div class="card-shadow">
                   <h3 class="team-header">Андрей Шевченко</h3>
                   <p class="team-profetion">Marketing</p>
@@ -428,16 +563,61 @@
             </li>
             <li class="team-item">
               <div>
-                <img
-                  class="imgblock"
-                  srcset="
-                    ./images/team2/mobile2team.jpg    1x,
-                    ./images/team2/mobile2team@2x.jpg 2x
-                  "
-                  src="./images/team4/mobile4team.jpg"
-                  alt="Фото сотрудника"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/team4/desktop4team.webp    270w,
+                      ./images/team4/desktop4team@2x.webp 540w
+                    "
+                    type="image/webp"
+                    sizes="270px"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/team4/desktop4team.jpg    270w,
+                      ./images/team4/desktop4team@2x.jpg 540w
+                    "
+                    sizes="270px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/team4/tablet4team.webp    354w,
+                      ./images/team4/tablet4team@2x.webp 708w
+                    "
+                    type="image/webp"
+                    sizes="354px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/team4/tablet4team.jpg    354w,
+                      ./images/team4/tablet4team@2x.jpg 708w
+                    "
+                    sizes="354px"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/team4/mobile4team.webp    450w,
+                      ./images/team4/mobile4team@2x.webp 900w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/team4/mobile4team.jpg    450w,
+                      ./images/team4/mobile4team@2x.jpg 900w
+                    "
+                  />
+                  <img
+                    src="./images/team4/mobile4team.jpg"
+                    alt="Фото сотрудника"
+                  />
+                </picture>
 
                 <div class="card-shadow">
                   <h3 class="team-header">Иван Николаев</h3>

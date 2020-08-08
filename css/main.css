@@ -382,7 +382,7 @@ p {
   margin: 0;
 }
 
-.imgblock {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -498,30 +498,54 @@ p {
   padding-top: 118px;
 }
 
-.container h2 {
-  margin-bottom: 30px;
+.features .container {
+  padding-bottom: 60px;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
+.team .container {
+  padding-bottom: 60px;
+}
+
+.container h2 {
+  margin-bottom: 30px;
 }
 
 .portfolio.container {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .container {
-    max-width: 768px;
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+    outline: 1px solid tomato;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
     padding-top: 94px;
+  }
+  .hero .container {
+    padding-top: 200px;
+  }
+  .team .container {
+    padding-bottom: 94px;
+  }
+  .features .container {
+    padding-bottom: 0;
+  }
+  .container h2 {
+    margin-top: 94px;
+  }
+  .portfolio.container {
+    margin-top: 93px;
   }
 }
 
@@ -667,6 +691,13 @@ p {
   text-transform: uppercase;
   color: #ffffff;
   padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 60px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -957,41 +988,45 @@ textarea:not(:placeholder-shown) ~ label {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .feature-flex li .icon-features {
-    width: calc(100% / 2);
+  .feature-flex .feature-flex-item {
+    width: 354px;
   }
-  .feature-flex li:nth-child(2n + 1) {
+  .feature-flex .feature-flex-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .feature-flex .feature-flex-item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-bottom: 94px;
+  }
+  .feature-flex {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .feature-flex-item {
+    width: 270px;
+  }
+  .feature-flex-item:nth-child(2n + 1) {
+    margin-right: 0;
+  }
+  .feature-flex-item:nth-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  .feature-flex-item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
 .team {
   background-color: #f5f4fa;
-  margin-top: 60px;
-}
-
-.team .container {
-  padding-bottom: 60px;
-}
-
-.team-item {
-  width: 100%;
 }
 
 .team-item:not(:last-child) {
   margin-bottom: 30px;
-}
-
-@media (max-width: 479px) {
-  .team .imgblock {
-    width: 100%;
-  }
-}
-
-@media (min-width: 480px) {
-  .team .imgblock {
-    width: 450px;
-  }
 }
 
 .team-header {
@@ -1021,6 +1056,54 @@ textarea:not(:placeholder-shown) ~ label {
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+}
+
+@media (min-width: 480px) {
+  .team-item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .team-item {
+    width: 354px;
+    outline: 1px solid tomato;
+  }
+  .team-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .team-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .team-item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-flex {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .team-item {
+    width: 270px;
+  }
+  .team-item:nth-child(2n + 1) {
+    margin-right: 0px;
+  }
+  .team-item:nth-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+  .team-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .messengers-flex {
