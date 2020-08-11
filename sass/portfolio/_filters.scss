@@ -1,7 +1,9 @@
 //filter buttons
 
 .filters {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   flex-wrap: wrap;
 
@@ -38,4 +40,27 @@
   background-color: $active-color;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 768px) {
+  .filters {
+    margin-bottom: 30px;
+  }
+  .filters-item {
+    &:not(:nth-child(3)) {
+      margin-right: 0;
+    }
+    &:nth-child(-n + 3) {
+      margin-bottom: 0;
+    }
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-bottom: 30px;
+  }
 }

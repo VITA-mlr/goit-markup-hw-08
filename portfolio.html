@@ -14,7 +14,7 @@
   </head>
   <body>
     <header class="header-section">
-      <nav class="container nav-flex">
+      <nav class="container">
         <!-- Logotype of site -->
         <div class="logo">
           <a href="./index.html"><span class="logo-blue">Web</span> Studio</a>
@@ -95,18 +95,64 @@
 
         <!-- <h2>Список проэктов</h2> -->
         <ul class="list-project">
-          <li>
+          <li class="item-project">
             <a class="card-linc" href="">
               <div class="position-text">
-                <img
-                  class="imgblock"
-                  srcset="
-                    <!-- ./images/project1/mobilePrj1.jpg    1x, -->
-                    ./images/project1/mobilePrj1@2x.jpg 2x
-                  "
-                  src="./images/project1/mobilePrj1.jpg"
-                  alt="Изображение веб-сайта на ноутбуке"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project1/desktopPrj1.webp    370w,
+                      ./images/project1/desktopPrj1@2x.webp 740w
+                    "
+                    type="image/webp"
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project1/desktopPrj1.jpg    370w,
+                      ./images/project1/desktopPrj1@2x.jpg 740w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project1/tabletPrj1.webp    354w,
+                      ./images/project1/tabletPrj1@2x.webp 708w
+                    "
+                    type="image/webp"
+                    sizes="354px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project1/tabletPrj1.jpg    354w,
+                      ./images/project1/tabletPrj1@2x.jpg 708w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project1/desktopPrj1.webp    450w,
+                      ./images/project1/desktopPrj1@2x.webp 900w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project1/desktopPrj1.jpg    354w,
+                      ./images/project1/desktopPrj1@2x.jpg 900w
+                    "
+                  />
+                  <img
+                    src="./images/project1/mobilePrj1.jpg"
+                    alt="Изображение веб-сайта на ноутбуке"
+                  />
+                </picture>
 
                 <p class="text">
                   Технокряк это современная площадка распространения
@@ -120,18 +166,65 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="item-project">
             <a class="card-linc" href="">
               <div class="position-text">
-                <img
-                  class="imgblock"
-                  srcset="
-                    ./images/project2/mobilePrj2.jpg    1x,
-                    ./images/project2/mobilePrj2@2x.jpg 2x
-                  "
-                  src="./images/project2/mobilePrj2.jpg"
-                  alt="Изображение спортсменов играющих в баскетбол"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project2/desktopPrj2.webp    370w,
+                      ./images/project2/desktopPrj2@2x.webp 740w
+                    "
+                    type="image/webp"
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project2/desktopPrj2.jpg    370w,
+                      ./images/project2/desktopPrj2@2x.jpg 740w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project2/tabletPrj2.webp    354w,
+                      ./images/project2/tabletPrj2@2x.webp 708w
+                    "
+                    type="image/webp"
+                    sizes="354px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project2/tabletPrj2.jpg    354w,
+                      ./images/project2/tabletPrj2@2x.jpg 708w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project2/desktopPrj2.webp    450w,
+                      ./images/project2/desktopPrj2@2x.webp 900w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project2/desktopPrj2.jpg    354w,
+                      ./images/project2/desktopPrj2@2x.jpg 900w
+                    "
+                  />
+                  <img
+                    src="./images/project2/mobilePrj2.jpg"
+                    alt="Изображение спортсменов играющих в баскетбол"
+                  />
+                </picture>
+
                 <p class="text">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -146,18 +239,65 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="item-project">
             <a class="card-linc" href="">
               <div class="position-text">
-                <img
-                  class="imgblock"
-                  srcset="
-                    ./images/project3/mobilePrj3.jpg    1x,
-                    ./images/project3/mobilePrj3@2x.jpg 2x
-                  "
-                  src="./images/project3/mobilePrj3.jpg"
-                  alt="Изображение логотипа"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project3/desktopPrj3.webp    370w,
+                      ./images/project3/desktopPrj3@2x.webp 740w
+                    "
+                    type="image/webp"
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project3/desktopPrj3.jpg    370w,
+                      ./images/project3/desktopPrj3@2x.jpg 740w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project3/tabletPrj3.webp    354w,
+                      ./images/project3/tabletPrj3@2x.webp 708w
+                    "
+                    type="image/webp"
+                    sizes="354px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project3/tabletPrj3.jpg    354w,
+                      ./images/project3/tabletPrj3@2x.jpg 708w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project3/desktopPrj3.webp    450w,
+                      ./images/project3/desktopPrj3@2x.webp 900w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project3/desktopPrj3.jpg    354w,
+                      ./images/project3/desktopPrj3@2x.jpg 900w
+                    "
+                  />
+                  <img
+                    src="./images/project3/mobilePrj3.jpg"
+                    alt="Изображение логотипа"
+                  />
+                </picture>
+
                 <p class="text">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -170,18 +310,65 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="item-project">
             <a class="card-linc" href="">
               <div class="position-text">
-                <img
-                  class="imgblock"
-                  srcset="
-                    ./images/project4/mobilePrj4.jpg    1x,
-                    ./images/project4/mobilePrj4@2x.jpg 2x
-                  "
-                  src="./images/project4/mobilePrj4.jpg"
-                  alt="Изображение наушников"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project4/desktopPrj4.webp    370w,
+                      ./images/project4/desktopPrj4@2x.webp 740w
+                    "
+                    type="image/webp"
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project4/desktopPrj4.jpg    370w,
+                      ./images/project4/desktopPrj4@2x.jpg 740w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project4/tabletPrj4.webp    354w,
+                      ./images/project4/tabletPrj4@2x.webp 708w
+                    "
+                    type="image/webp"
+                    sizes="354px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project4/tabletPrj4.jpg    354w,
+                      ./images/project4/tabletPrj4@2x.jpg 708w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project4/desktopPrj4.webp    450w,
+                      ./images/project4/desktopPrj4@2x.webp 900w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project4/desktopPrj4.jpg    354w,
+                      ./images/project4/desktopPrj4@2x.jpg 900w
+                    "
+                  />
+                  <img
+                    src="./images/project4/mobilePrj4.jpg"
+                    alt="Изображение наушников"
+                  />
+                </picture>
+
                 <p class="text">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -194,18 +381,65 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="item-project">
             <a class="card-linc" href="">
               <div class="position-text">
-                <img
-                  class="imgblock"
-                  srcset="
-                    ./images/project5/mobilePrj5.jpg    1x,
-                    ./images/project5/mobilePrj5@2x.jpg 2x
-                  "
-                  src="./images/project5/mobilePrj5.jpg"
-                  alt="Изображение двух коробок"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project5/desktopPrj5.webp    370w,
+                      ./images/project5/desktopPrj5@2x.webp 740w
+                    "
+                    type="image/webp"
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project5/desktopPrj5.jpg    370w,
+                      ./images/project5/desktopPrj5@2x.jpg 740w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project5/tabletPrj5.webp    354w,
+                      ./images/project5/tabletPrj5@2x.webp 708w
+                    "
+                    type="image/webp"
+                    sizes="354px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project5/tabletPrj5.jpg    354w,
+                      ./images/project5/tabletPrj5@2x.jpg 708w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project5/desktopPrj5.webp    450w,
+                      ./images/project5/desktopPrj5@2x.webp 900w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project5/desktopPrj5.jpg    354w,
+                      ./images/project5/desktopPrj5@2x.jpg 900w
+                    "
+                  />
+                  <img
+                    src="./images/project5/mobilePrj5.jpg"
+                    alt="Изображение двух коробок"
+                  />
+                </picture>
+
                 <p class="text">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -218,18 +452,65 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="item-project">
             <a class="card-linc" href="">
               <div class="position-text">
-                <img
-                  class="imgblock"
-                  srcset="
-                    ./images/project6/mobilePrj6.jpg    1x,
-                    ./images/project6/mobilePrj6@2x.jpg 2x
-                  "
-                  src="./images/project6/mobilePrj6.jpg"
-                  alt="Изображение монитора"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project6/desktopPrj6.webp    370w,
+                      ./images/project6/desktopPrj6@2x.webp 740w
+                    "
+                    type="image/webp"
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project6/desktopPrj6.jpg    370w,
+                      ./images/project6/desktopPrj6@2x.jpg 740w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project6/tabletPrj6.webp    354w,
+                      ./images/project6/tabletPrj6@2x.webp 708w
+                    "
+                    type="image/webp"
+                    sizes="354px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project6/tabletPrj6.jpg    354w,
+                      ./images/project6/tabletPrj6@2x.jpg 708w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project6/desktopPrj6.webp    450w,
+                      ./images/project6/desktopPrj6@2x.webp 900w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project6/desktopPrj6.jpg    354w,
+                      ./images/project6/desktopPrj6@2x.jpg 900w
+                    "
+                  />
+                  <img
+                    src="./images/project6/mobilePrj6.jpg"
+                    alt="Изображение монитора"
+                  />
+                </picture>
+
                 <p class="text">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -242,18 +523,66 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="item-project">
             <a class="card-linc" href="">
               <div class="position-text">
-                <img
-                  class="imgblock"
-                  srcset="
-                    ./images/project7/mobilePrj7.jpg    1x,
-                    ./images/project7/mobilePrj7@2x.jpg 2x
-                  "
-                  src="./images/project7/mobilePrj7.jpg"
-                  alt="Изображение розвернутого журнала"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project7/desktopPrj7.webp    370w,
+                      ./images/project7/desktopPrj7@2x.webp 740w
+                    "
+                    type="image/webp"
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project7/desktopPrj7.jpg    370w,
+                      ./images/project7/desktopPrj7@2x.jpg 740w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project7/tabletPrj7.webp    354w,
+                      ./images/project7/tabletPrj7@2x.webp 708w
+                    "
+                    type="image/webp"
+                    sizes="354px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project7/tabletPrj7.jpg    354w,
+                      ./images/project7/tabletPrj7@2x.jpg 708w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project7/desktopPrj7.webp    450w,
+                      ./images/project7/desktopPrj7@2x.webp 900w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project7/desktopPrj7.jpg    354w,
+                      ./images/project7/desktopPrj7@2x.jpg 900w
+                    "
+                  />
+
+                  <img
+                    src="./images/project7/mobilePrj7.jpg"
+                    alt="Изображение розвернутого журнала"
+                  />
+                </picture>
+
                 <p class="text">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -266,18 +595,65 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="item-project">
             <a class="card-linc" href="">
               <div class="position-text">
-                <img
-                  class="imgblock"
-                  srcset="
-                    ./images/project8/mobilePrj8.jpg    1x,
-                    ./images/project8/mobilePrj8@2x.jpg 2x
-                  "
-                  src="./images/project8/mobilePrj8.jpg"
-                  alt="Изображение логотипа на этекетке"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project8/desktopPrj8.webp    370w,
+                      ./images/project8/desktopPrj8@2x.webp 740w
+                    "
+                    type="image/webp"
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project8/desktopPrj8.jpg    370w,
+                      ./images/project8/desktopPrj8@2x.jpg 740w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project8/tabletPrj8.webp    354w,
+                      ./images/project8/tabletPrj8@2x.webp 708w
+                    "
+                    type="image/webp"
+                    sizes="354px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project8/tabletPrj8.jpg    354w,
+                      ./images/project8/tabletPrj8@2x.jpg 708w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project8/desktopPrj8.webp    450w,
+                      ./images/project8/desktopPrj8@2x.webp 900w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project8/desktopPrj8.jpg    354w,
+                      ./images/project8/desktopPrj8@2x.jpg 900w
+                    "
+                  />
+                  <img
+                    src="./images/project8/mobilePrj8.jpg"
+                    alt="Изображение логотипа на этекетке"
+                  />
+                </picture>
+
                 <p class="text">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -290,18 +666,65 @@
               </div>
             </a>
           </li>
-          <li>
+          <li class="item-project">
             <a class="card-linc" href="">
               <div class="position-text">
-                <img
-                  class="imgblock"
-                  srcset="
-                    ./images/project9/mobilePrj9.jpg    1x,
-                    ./images/project9/mobilePrj9@2x.jpg 2x
-                  "
-                  src="./images/project9/mobilePrj9.jpg"
-                  alt="Изображение ноутбука с печатающими руками"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project9/desktopPrj9.webp    370w,
+                      ./images/project9/desktopPrj9@2x.webp 740w
+                    "
+                    type="image/webp"
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/project9/desktopPrj9.jpg    370w,
+                      ./images/project9/desktopPrj9@2x.jpg 740w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project9/tabletPrj9.webp    354w,
+                      ./images/project9/tabletPrj9@2x.webp 708w
+                    "
+                    type="image/webp"
+                    sizes="354px"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/project9/tabletPrj9.jpg    354w,
+                      ./images/project9/tabletPrj9@2x.jpg 708w
+                    "
+                    sizes="370px"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project9/desktopPrj9.webp    450w,
+                      ./images/project9/desktopPrj9@2x.webp 900w
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/project9/desktopPrj9.jpg    354w,
+                      ./images/project9/desktopPrj9@2x.jpg 900w
+                    "
+                  />
+                  <img
+                    src="./images/project9/mobilePrj9.jpg"
+                    alt="Изображение ноутбука с печатающими руками"
+                  />
+                </picture>
+
                 <p class="text">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
