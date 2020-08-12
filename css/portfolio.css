@@ -914,6 +914,8 @@ img {
 @media screen and (min-width: 768px) {
   .filters {
     margin-bottom: 30px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .filters-item:not(:nth-child(3)) {
     margin-right: 0;
@@ -926,13 +928,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .filters {
-    margin-bottom: 30px;
-  }
-}
-
-.list-project li:not(:last-child) {
+.item-project:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -971,6 +967,7 @@ img {
   letter-spacing: 0.06em;
   color: #212121;
   padding-bottom: 4px;
+  overflow: hidden;
 }
 
 .position-text {
@@ -1028,11 +1025,23 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  li:not(:last-child) {
-    margin-bottom: 0;
+  .item-project {
+    width: 354px;
   }
-  .item-project:not(:last-child) {
+  .item-project:not(:nth-child(2n)) {
     margin-right: 30px;
+  }
+  .text {
+    width: 354px;
+  }
+  .card-description {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :not(:nth-child(2n)) {
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

@@ -1,9 +1,7 @@
 //   Portfolio
 
-.list-project {
-  li:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.item-project:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .card-link {
@@ -46,6 +44,7 @@
   letter-spacing: 0.06em;
   color: $header-menu-color;
   padding-bottom: 4px;
+  overflow: hidden;
 }
 
 .position-text {
@@ -93,12 +92,26 @@
     display: flex;
     flex-wrap: wrap;
   }
+  // li:not(:last-child) {
+  //   margin-bottom: 0;
+  // }
+  .item-project {
+    width: 354px;
 
-  li:not(:last-child) {
-    margin-bottom: 0;
+    // &:not(:last-child),
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
   }
-
-  .item-project:not(:last-child) {
-    margin-right: 30px;
+  .text {
+    width: 354px;
+  }
+  .card-description {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 768px) {
+  &:not(:nth-child(2n)) {
+    margin-right: 0;
   }
 }
