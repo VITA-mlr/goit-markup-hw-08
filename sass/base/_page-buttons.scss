@@ -37,6 +37,10 @@
   & .icon-cross {
     display: none;
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .button-menu.is-open {

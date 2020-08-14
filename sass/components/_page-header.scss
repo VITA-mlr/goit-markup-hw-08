@@ -4,13 +4,16 @@
   padding: 0;
   color: $logo-color;
   border-bottom: 1px solid $line-color;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
+  font-size: 24px;
+  line-height: 28px;
   letter-spacing: 0.03em;
 
   &-blue {
@@ -47,6 +50,22 @@
   &.is-open {
     display: block;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    // padding-right: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    position: relative;
+    bottom: 0;
+    right: 0;
+    border-top: none;
+    transform: translateY(0);
+  }
 }
 
 .nav-list-site {
@@ -55,14 +74,37 @@
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.02em;
-  // color: $header-menu-color;
+  color: $header-menu-color;
 
-  li:not(:last-child) {
-    margin-bottom: 40px;
+  .nav-item-site:hover {
+    color: $active-color;
   }
 
-  li:hover {
-    color: $active-color;
+  @media screen and (max-width: 767px) {
+    .nav-item-site:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    left: 0;
+    right: 0;
+    padding: 0;
+    border: none;
+    font-size: 14px;
+    line-height: 16px;
+
+    .nav-item-site {
+      padding: 31px 0;
+    }
+
+    .nav-item-site:not(:first-child) {
+      margin-left: 50px;
+    }
   }
 }
 
@@ -80,9 +122,14 @@
     transform: translateX(-50%);
     margin-top: 8px;
     width: 64px;
-    height: 2px;
+    height: 4px;
     background: $active-color;
     border-radius: 2px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 28px;
+      width: 47px;
+    }
   }
 
   &-link-2 {
@@ -98,7 +145,7 @@
   letter-spacing: 0.02em;
   color: $text-color;
 
-  li:first-child {
+  .nav-item-contacts:first-child {
     margin-bottom: 16px;
   }
 
@@ -107,11 +154,24 @@
     fill: $text-color;
   }
 
-  li:hover {
+  .nav-item-contacts:hover {
     color: $active-color;
 
     .icon {
       fill: $active-color;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 84px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 31px;
   }
 }

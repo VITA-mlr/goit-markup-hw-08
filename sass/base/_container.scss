@@ -11,7 +11,7 @@
     padding-bottom: 0;
     margin-bottom: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     // outline: 1px solid tomato;
   }
@@ -67,7 +67,11 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
-    outline: 1px solid tomato;
+    // outline: 1px solid tomato;
+
+    .header-section & {
+      display: flex;
+    }
   }
 }
 
