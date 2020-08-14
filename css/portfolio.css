@@ -755,6 +755,24 @@ img {
     font-size: 26px;
     line-height: 31px;
   }
+  .nav-flex {
+    width: 932px;
+  }
+  .nav-list-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-left: 305px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .nav-item-contacts:first-child {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
 }
 
 .footer {
@@ -960,13 +978,14 @@ img {
 
 .filters {
   margin-bottom: 40px;
-  margin-right: auto;
-  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .filters .button, .filters .button-menu {
@@ -1127,12 +1146,6 @@ img {
   }
   .card-description {
     width: 354px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  :not(:nth-child(2n)) {
-    margin-right: 0;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */
