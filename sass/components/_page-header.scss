@@ -145,10 +145,6 @@
   letter-spacing: 0.02em;
   color: $text-color;
 
-  .nav-item-contacts:first-child {
-    margin-bottom: 16px;
-  }
-
   .icon {
     margin-right: 10px;
     fill: $text-color;
@@ -159,6 +155,18 @@
 
     .icon {
       fill: $active-color;
+    }
+  }
+
+  .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .nav-item-contacts:first-child {
+      margin-bottom: 16px;
     }
   }
 
@@ -176,7 +184,7 @@
   }
 
   .nav-flex {
-    width: 932px;
+    width: 938px;
   }
 
   .nav-list-contacts {

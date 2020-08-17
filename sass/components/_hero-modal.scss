@@ -18,10 +18,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 450px;
+  width: 100%;
   height: 609px;
   padding: 40px;
-  padding-top: 40px;
+  // padding-top: 40px;
   display: block;
   text-align: start;
   background: #ffffff;
@@ -32,21 +32,33 @@
   h2 {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 30px;
     text-align: center;
     letter-spacing: 0.03em;
     color: $header-menu-color;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .button {
-    transform: translateX(60%);
+    transform: translateX(30%);
+  }
+
+  @media screen and (min-width: 451px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    padding-top: 47px;
+    padding-bottom: 33px;
+    h2 {
+      line-height: 23px;
+    }
   }
 }
 
 .close-modal {
   position: absolute;
-  //   top: 8px;
+  top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
@@ -58,6 +70,9 @@
   align-items: center;
   background-color: $hero-button-color;
   fill: $header-menu-color;
+  @media screen and (min-width: 1200px) {
+    top: 15px;
+  }
 }
 
 .icon-close:hover {
@@ -73,9 +88,9 @@
   letter-spacing: 0.01em;
   color: $text-color;
 
-  &:last-child {
-    margin-bottom: 20px;
-  }
+  // &:last-child {
+  //   margin-bottom: 20px;
+  // }
 
   input {
     position: relative;
@@ -137,9 +152,12 @@ textarea:not(:placeholder-shown) ~ label {
   position: relative;
   padding-bottom: 30px;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  @media screen and (min-width: 1200px) {
+    line-height: 24px;
+  }
 }
 
 .check-input {
@@ -156,13 +174,16 @@ textarea:not(:placeholder-shown) ~ label {
 .check-icon {
   position: absolute;
   top: 4px;
-  left: 12px;
+  left: 1px;
   width: 16px;
   height: 15px;
   background-image: url(../images/Vector.svg);
   fill: $header-menu-color;
   background-repeat: no-repeat;
   background-size: contain;
+  @media screen and (min-width: 1200px) {
+    left: 12px;
+  }
 }
 
 .check-input:checked + .check-icon {
