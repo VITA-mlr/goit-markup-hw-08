@@ -1411,12 +1411,35 @@ textarea:not(:placeholder-shown) ~ label {
   text-transform: uppercase;
   color: #ffffff;
   display: block;
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 
 .footer .messengers-flex {
   padding-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .footer .flex-item-mesengers {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .flex-item-address {
+    margin-left: 71px;
+    margin-right: 165px;
+  }
+  .footer .form {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer .form {
+    margin-top: 60px;
+  }
 }
 
 .footer-address {
@@ -1432,10 +1455,8 @@ textarea:not(:placeholder-shown) ~ label {
 }
 
 .form {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .form input {
@@ -1520,15 +1541,20 @@ textarea:not(:placeholder-shown) ~ label {
 }
 
 @media screen and (min-width: 768px) {
-  .tablet-flex {
+  .footer-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -1537,6 +1563,8 @@ textarea:not(:placeholder-shown) ~ label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1546,6 +1574,16 @@ textarea:not(:placeholder-shown) ~ label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .footer-flex .flex-item-address {
+    margin-right: 69px;
+  }
+  .footer-flex .form {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-right: 0;
+    margin-left: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
