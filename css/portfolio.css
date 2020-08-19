@@ -409,10 +409,6 @@ img {
   overflow: hidden;
 }
 
-.desctop-section {
-  display: none;
-}
-
 .button, .button-menu {
   padding: 0;
   margin: 0;
@@ -545,14 +541,14 @@ img {
   .hero .container {
     padding-top: 200px;
   }
+  .we_make .container {
+    padding-top: 0;
+  }
   .team .container {
     padding-bottom: 94px;
   }
   .features .container {
     padding-bottom: 0;
-  }
-  .container h2 {
-    margin-top: 94px;
   }
 }
 

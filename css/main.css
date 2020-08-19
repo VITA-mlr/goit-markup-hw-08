@@ -409,10 +409,6 @@ img {
   overflow: hidden;
 }
 
-.desctop-section {
-  display: none;
-}
-
 .button, .button-menu {
   padding: 0;
   margin: 0;
@@ -545,14 +541,14 @@ img {
   .hero .container {
     padding-top: 200px;
   }
+  .we_make .container {
+    padding-top: 0;
+  }
   .team .container {
     padding-bottom: 94px;
   }
   .features .container {
     padding-bottom: 0;
-  }
-  .container h2 {
-    margin-top: 94px;
   }
 }
 
@@ -1584,6 +1580,47 @@ textarea:not(:placeholder-shown) ~ label {
             align-items: flex-end;
     margin-right: 0;
     margin-left: auto;
+  }
+}
+
+.we_make-section {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .we_make-section {
+    display: block;
+  }
+  .we_make-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .we_make-flex li {
+    max-width: 370px;
+  }
+  .we_make-flex li:not(:last-child) {
+    margin-right: 30px;
+  }
+  .we_make-item {
+    position: relative;
+  }
+  .we_make-signature {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    padding: 27px 0;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  .we_make-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hero-button-color);
   }
 }
 /*# sourceMappingURL=main.css.map */
