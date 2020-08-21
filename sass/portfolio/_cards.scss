@@ -102,6 +102,10 @@
     &:not(:nth-child(2n)) {
       margin-right: 30px;
     }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
   .text {
     width: 354px;
@@ -110,8 +114,16 @@
     width: 354px;
   }
 }
-// @media screen and (min-width: 768px) {
-//   &:not(:nth-child(2n)) {
-//     margin-right: 0;
-//   }
-// }
+
+@media screen and (min-width: 1200px) {
+  .item-project {
+    margin-right: 0;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 0;
+    }
+  }
+  // &:not(:nth-child(3n)) {
+  //   margin-right: 30px;
+  // }
+}

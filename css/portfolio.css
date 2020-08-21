@@ -1189,11 +1189,23 @@ img {
   .item-project:not(:nth-child(2n)) {
     margin-right: 30px;
   }
+  .item-project:last-child {
+    margin-right: 0;
+  }
   .text {
     width: 354px;
   }
   .card-description {
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item-project {
+    margin-right: 0;
+  }
+  .item-project:not(:nth-child(2n)) {
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */
